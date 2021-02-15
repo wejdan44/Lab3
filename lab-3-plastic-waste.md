@@ -1,11 +1,11 @@
 Lab 3 - Plastic Waste
 ================
 DSC 200 - Data Science I
-2021-02-06
+2021-02-15
 
-Student Name:
+Student Name:wejdan awad
 
-Student ID:
+Student ID:2201002744
 
 ``` r
 library(tidyverse)
@@ -64,6 +64,17 @@ there, or whether this is a data error.
 E1. Plot, using histograms, the distribution of plastic waste per capita
 faceted by continent. What can you say about how the continents compare
 to each other in terms of their plastic waste per capita?
+
+``` {r
+ggplot(data = plastic_waste,
+mapping = aes(x = plastic_waste_per_cap,
+color = continent,
+fill = continent)) +
+geom_histogram(alpha = 0.7)  
+```
+
+Answer: the africa is the most density continent and the south america
+is the most continent in plastic waste per cap
 
 **NOTE:** From this point onwards the plots and the output of the code
 are not displayed in the lab instructions, but you can and should write
