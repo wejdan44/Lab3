@@ -134,7 +134,10 @@ E3. Describe why we defined the `color` and `fill` of the curves by
 mapping aesthetics of the plot but we defined the `alpha` level as a
 characteristic of the plotting geom.
 
-Answer here:
+Answer here: Because here we represent (continents), not just color
+control, as the colors here belong to the continents, and also the
+filling is related to the continents But the Alpha it’s Graphic (
+geno\_density )
 
 *Now is a good time to knit your document and commit and push your
 changes to GitHub with an appropriate commit message. Make sure to
