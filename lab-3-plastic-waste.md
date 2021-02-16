@@ -206,6 +206,20 @@ total population as well as plastic waste per capita and coastal
 population. You will need to make two separate plots. Do either of these
 pairs of variables appear to be more strongly linearly associated?
 
+``` r
+ggplot(data = plastic_waste,
+        mapping = aes(x = total_pop,color = continent, fill = continent,
+                      y = plastic_waste_per_cap)) +
+     geom_point()
+```
+
+``` r
+ggplot(data = plastic_waste,
++        mapping = aes(x = coastal_pop,color = continent, fill = continent,
++                      y = plastic_waste_per_cap)) +
++     geom_point()
+```
+
 *Now is another good time to knit your document and commit and push your
 changes to GitHub with an appropriate commit message. Make sure to
 commit and push all changed files so that your Git pane is cleared up
